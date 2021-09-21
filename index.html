@@ -4,26 +4,22 @@
     <title>IE628</title>
   </head>
   <body>
-    <table>
-      <tr>
-        <td>امیررضا موسوی</td>
-      </tr>
-      <tr>
-        <table class="table1">
-          <tr>
-            <td>9721163043</td>
-            <td>
-              <img
-                src="https://download.logo.wine/logo/Telegram_(software)/Telegram_(software)-Logo.wine.png"
-                alt=""
-                width="100%"
-              />
-            </td>
-            <td>1400-6-30</td>
-          </tr>
-        </table>
-      </tr>
-      <tr>
+    <div>
+      <div>
+        <p>امیررضا موسوی</p>
+      </div>
+      <div class="main-div">
+        <div class="sub-div" style="margin: center">9721163043</div>
+        <div class="sub-div">
+          <img
+            src="https://download.logo.wine/logo/Telegram_(software)/Telegram_(software)-Logo.wine.png"
+            alt=""
+            width="100%"
+          />
+        </div>
+        <div class="sub-div">1400-6-30</div>
+      </div>
+      <div>
         <table class="table2">
           <tr>
             <td>0</td>
@@ -38,24 +34,39 @@
             <td>9</td>
           </tr>
         </table>
-      </tr>
-    </table>
+      </div>
+    </div>
   </body>
 </html>
 
 <style>
+  * {
+    text-align: center;
+  }
   table {
     border: 1px solid black;
     width: 100%;
-    text-align: center;
-  }
-  .table1 th,
-  .table1 td {
-    border: 1px solid black;
-    width: 33%;
   }
   .table2 th,
   .table2 td {
     border: 1px solid black;
+  }
+
+  .main-div {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  .sub-div {
+    width: calc(100% / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen {
+    .sub-div {
+      width: calc(100% / 3);
+    }
   }
 </style>
